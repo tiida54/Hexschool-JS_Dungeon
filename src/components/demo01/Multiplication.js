@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom';
 import './Multiplication.scss';
 
 class Multiplication extends Component {
@@ -35,6 +36,7 @@ for (let i = 2; i < 10; i++) {
 // console.log(listItems)
 class MultiplicationList extends Component {
   render() {
+    console.log("MultiplicationList")
     return <div class="container">
       <div class="title-block">
         <div class="title-block__bar">
@@ -58,3 +60,6 @@ class MultiplicationList extends Component {
 }
 
 export default MultiplicationList
+
+ReactDOM.render(<MultiplicationList />, document.getElementById('root'));
+

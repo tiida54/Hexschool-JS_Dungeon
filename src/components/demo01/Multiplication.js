@@ -6,7 +6,7 @@ class Multiplication extends Component {
   constructor(props) {
     super(props)
     this.multipleItems = []
-    console.log(props)
+    // console.log(props)
     for (let i = 1; i < 10; i++) {
       this.multipleItems.push(
         <div class="Multiplication-main--content">
@@ -36,7 +36,7 @@ for (let i = 2; i < 10; i++) {
 // console.log(listItems)
 class MultiplicationList extends Component {
   render() {
-    console.log("MultiplicationList")
+    // console.log("MultiplicationList")
     return <div class="container">
       <div class="title-block">
         <div class="title-block__bar">

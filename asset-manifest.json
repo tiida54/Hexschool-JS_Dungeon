@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hexschool-js_dungeon/static/css/main.41144bbe.chunk.css",
+    "main.js": "/hexschool-js_dungeon/static/js/main.9821aa85.chunk.js",
+    "main.js.map": "/hexschool-js_dungeon/static/js/main.9821aa85.chunk.js.map",
+    "runtime~main.js": "/hexschool-js_dungeon/static/js/runtime~main.568c3e84.js",
+    "runtime~main.js.map": "/hexschool-js_dungeon/static/js/runtime~main.568c3e84.js.map",
+    "static/js/2.fdca284b.chunk.js": "/hexschool-js_dungeon/static/js/2.fdca284b.chunk.js",
+    "static/js/2.fdca284b.chunk.js.map": "/hexschool-js_dungeon/static/js/2.fdca284b.chunk.js.map",
+    "index.html": "/hexschool-js_dungeon/index.html",
+    "precache-manifest.0f9a3c7a3c1121447869005b491c3ae7.js": "/hexschool-js_dungeon/precache-manifest.0f9a3c7a3c1121447869005b491c3ae7.js",
+    "service-worker.js": "/hexschool-js_dungeon/service-worker.js",
+    "static/css/main.41144bbe.chunk.css.map": "/hexschool-js_dungeon/static/css/main.41144bbe.chunk.css.map"
+  }
+}

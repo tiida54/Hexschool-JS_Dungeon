@@ -5,12 +5,12 @@
 - 使用 React & Vanilla JS
 
 ---
-## Record
 
+## 闖關紀錄
 
 |  主題 | 重點  | DEMO |
 | -------- | ---------------- |-------- |
-| 1F - 九九乘法表     | JS for 迴圈技巧      | DEMO     |
+| 1F - 九九乘法表     | JS for 迴圈技巧      | [DEMO][demo01]     |
 | 2F - 時鐘    | setTimeout()       | DEMO     |
 | 3F - 計算機     | 數字位數    | DEMO     |
 | 4F - 時區     | TimeStamp    | DEMO     |
@@ -24,3 +24,14 @@
 | 12F - 拼圖     |  JS drag gable     | DEMO     |
 | 13F - 貪吃蛇     | 鍵盤操作    | DEMO     |
 ---
+#### 初始化設定
+
+[Create React App](https://github.com/facebook/create-react-app)
+
+[參考設定 - YouTube - React JS Crash Course](https://www.youtube.com/watch?v=sBws8MSXN7A)
+
+---
+###### tags: `React` `Notes` `Hexschool` `underground`
+
+---
+[demo01]:https://tiida54.github.io/hexschool-js_dungeon/

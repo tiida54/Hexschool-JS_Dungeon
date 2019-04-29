@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c58cf206dcc6a9ecc8adb4b0447bc771",
+    "revision": "05434a3c3aec55d0646ddaf0fad37a99",
     "url": "/hexschool-js_dungeon/index.html"
   },
   {
-    "revision": "9d5ed36c587abe26ab8b",
+    "revision": "c47951a2c70d5de4ea1b",
     "url": "/hexschool-js_dungeon/static/css/main.41144bbe.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hexschool-js_dungeon/static/js/2.25847bef.chunk.js"
   },
   {
-    "revision": "9d5ed36c587abe26ab8b",
-    "url": "/hexschool-js_dungeon/static/js/main.968924d4.chunk.js"
+    "revision": "c47951a2c70d5de4ea1b",
+    "url": "/hexschool-js_dungeon/static/js/main.de30f311.chunk.js"
   },
   {
     "revision": "48c7e0db72ddf12f5f42",

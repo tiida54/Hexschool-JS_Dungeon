@@ -11,7 +11,7 @@
 |  主題 | 重點  | DEMO |
 | -------- | ---------------- |-------- |
 | 1F - 九九乘法表     | JS for 迴圈技巧      | [DEMO][demo01]     |
-| 2F - 時鐘    | setTimeout()       | DEMO     |
+| 2F - 時鐘    | setTimeout()       |  [DEMO][demo02]     |
 | 3F - 計算機     | 數字位數    | DEMO     |
 | 4F - 時區     | TimeStamp    | DEMO     |
 | 5F - 全台空氣指標儀表板    | API    | DEMO     |
@@ -34,4 +34,5 @@
 ###### tags: `React` `Notes` `Hexschool` `underground`
 
 ---
-[demo01]:https://tiida54.github.io/hexschool-js_dungeon/
+[demo01]:https://tiida54.github.io/hexschool-js_dungeon/demo01
+[demo02]:https://tiida54.github.io/hexschool-js_dungeon/demo02

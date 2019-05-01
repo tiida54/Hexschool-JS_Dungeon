@@ -1,16 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-// import logo from './logo.svg';
-import './App.css';
-
 import demo01 from './components/demo01/Multiplication';
+import demo02 from './components/demo02/Clock';
 
 const App = () => (
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={demo01} />
-        {/* <Route path="/boss01" component={Boss01} /> */}
+        <Route path="/demo01" component={demo01} />
+        <Route path="/demo02" component={demo02} />
 
       </Switch>
     </BrowserRouter>

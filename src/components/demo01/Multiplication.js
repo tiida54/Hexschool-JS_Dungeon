@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import styles from './Multiplication.module.scss';
 
 class Multiplication extends Component {
@@ -34,10 +34,9 @@ for (let i = 2; i < 10; i++) {
   listItems.push(<Multiplication key={i} number={i} />)
 }
 // console.log(listItems)
-class MultiplicationList extends Component {
-  render() {
+const  MultiplicationList = () => (
     // console.log("MultiplicationList")
-    return <div className={styles.container}>
+     <div className={styles.container}>
       <div className={styles.title_block}>
         <div className={styles.title_block_bar}>
           <div className={styles.title_block_bar_line}>
@@ -55,9 +54,8 @@ class MultiplicationList extends Component {
         </div>
       </div>
       {listItems}
-    </div>;
-  }
-}
+    </div>
+)
 
 export default MultiplicationList
 

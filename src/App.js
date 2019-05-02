@@ -7,7 +7,7 @@ import demo02 from './components/demo02/Clock';
 const App = () => (
   <BrowserRouter>
     <Switch>
-      {/* <Route path="/" exact component={demo01} /> */}
+      <Route path="/" exact component={demo01} />
       <Route path="/demo01" component={demo01} />
       <Route path="/demo02" component={demo02} />
 

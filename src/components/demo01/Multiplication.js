@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import styles from './Multiplication.module.scss';
 
 class Multiplication extends Component {
@@ -61,8 +61,8 @@ class MultiplicationList extends Component {
 
 export default MultiplicationList
 
-// window.addEventListener("load", () => {
-//   let myComponent = <MultiplicationList/>;
-//   ReactDOM.render(myComponent, document.getElementById('root'));
-// });
+window.addEventListener("load", () => {
+  let myComponent = <MultiplicationList/>;
+  ReactDOM.render(myComponent, document.getElementById('root'));
+});
 

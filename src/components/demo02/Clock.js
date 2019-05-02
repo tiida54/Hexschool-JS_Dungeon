@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import styles from './Clock.module.scss';
 
 class Clock extends Component {
@@ -103,10 +103,7 @@ class Clock extends Component {
 
 export default Clock
 
-// window.addEventListener("load", () => {
-//     let myComponent =
-//         <div className="container">
-//             <Clock />
-//         </div>;
-//     ReactDOM.render(myComponent, document.getElementById('root'));
-// });
+window.addEventListener("load", () => {
+    let myComponent =<Clock />
+    ReactDOM.render(myComponent, document.getElementById('root'));
+});

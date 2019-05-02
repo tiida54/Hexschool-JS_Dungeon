@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import demo01 from './components/demo01/Multiplication';
-import demo02 from './components/demo02/Clock';
+import demo01 from './demo01/Multiplication';
+import demo02 from './demo02/Clock';
 
 const App = () => (
   <BrowserRouter>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import './Multiplication.scss';
+// import ReactDOM from 'react-dom';
+import styles from './Multiplication.module.scss';
 
 class Multiplication extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class Multiplication extends Component {
     // console.log(props)
     for (let i = 1; i < 10; i++) {
       this.multipleItems.push(
-        <div class="Multiplication-main--content">
+        <div key={i} className={styles.Multiplication_main_content}>
           <p>{this.props.number} x {i} = {this.props.number * i}</p>
         </div>
       )
@@ -17,9 +17,9 @@ class Multiplication extends Component {
   }
   render() {
     return (
-      <div class="Multiplication">
-        <div class="Multiplication-main">
-          <div class="Multiplication-main--title">
+      <div className={styles.Multiplication}>
+        <div className={styles.Multiplication_main}>
+          <div className={styles.Multiplication_main_title}>
             <p>{this.props.number}</p>
           </div>
           {this.multipleItems}
@@ -31,26 +31,26 @@ class Multiplication extends Component {
 
 let listItems = [];
 for (let i = 2; i < 10; i++) {
-  listItems.push(<Multiplication number={i} />)
+  listItems.push(<Multiplication key={i} number={i} />)
 }
 // console.log(listItems)
 class MultiplicationList extends Component {
   render() {
     // console.log("MultiplicationList")
-    return <div class="container">
-      <div class="title-block">
-        <div class="title-block__bar">
-          <div class="title-block__bar--line">
-            <div class="line"></div>
+    return <div className={styles.container}>
+      <div className={styles.title_block}>
+        <div className={styles.title_block_bar}>
+          <div className={styles.title_block_bar_line}>
+            <div className={styles.line}></div>
           </div>
         </div>
-        <div class="title-block__text center">
+        <div className={styles.title_block_text}>
           <h1>九九乘法表</h1>
           <h3>MULTIPLICATION CHART</h3>
         </div>
-        <div class="title-block__bar">
-          <div class="title-block__bar--line">
-            <div class="line"></div>
+        <div className={styles.title_block_bar}>
+          <div className={styles.title_block_bar_line}>
+            <div className={styles.line}></div>
           </div>
         </div>
       </div>
@@ -61,8 +61,8 @@ class MultiplicationList extends Component {
 
 export default MultiplicationList
 
-window.addEventListener("load", () => {
-  let myComponent = <MultiplicationList/>;
-  ReactDOM.render(myComponent, document.getElementById('root'));
-});
+// window.addEventListener("load", () => {
+//   let myComponent = <MultiplicationList/>;
+//   ReactDOM.render(myComponent, document.getElementById('root'));
+// });
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import './Clock.scss';
+// import ReactDOM from 'react-dom';
+import styles from './Clock.module.scss';
 
 class Clock extends Component {
     constructor(props) {
@@ -23,9 +23,9 @@ class Clock extends Component {
                     hr = hr / 6 + 3
                 }
                 this.time.push(
-                    <text class="text" x={135 + (90 * this.cos)} y={140 + (90 * this.sin)} fill="#ffffff">{hr}</text>,
-                    <line class="line" x1={140 + (100 * this.cos)} y1={140 + (100 * this.sin)} x2={140 + (120 * this.cos)} y2={140 + (120 * this.sin)} style={{ 'stroke': 'Tomato' }} />,
-                    <text class="text" x={135 + (125 * this.cos)} y={140 + (128 * this.sin)} fill="#ffffff">{hr + 12}</text>
+                    <text className={styles.text} x={135 + (90 * this.cos)} y={140 + (90 * this.sin)} fill="#ffffff">{hr}</text>,
+                    <line className="line" x1={140 + (100 * this.cos)} y1={140 + (100 * this.sin)} x2={140 + (120 * this.cos)} y2={140 + (120 * this.sin)} style={{ 'stroke': 'Tomato' }} />,
+                    <text className="text" x={135 + (125 * this.cos)} y={140 + (128 * this.sin)} fill="#ffffff">{hr + 12}</text>
                 )
             }
             else if ((i - 3) % 6 === 0 && i !== 0) {
@@ -36,7 +36,7 @@ class Clock extends Component {
             }
             else if (i !== 0) {
                 this.time.push(
-                    <circle class="center" cx={140 + (110 * this.cos)} cy={140 + (110 * this.sin)} r="1"
+                    <circle className="center" cx={140 + (110 * this.cos)} cy={140 + (110 * this.sin)} r="1"
                         fill="#ffffff" />,
                 )
             }
@@ -61,22 +61,24 @@ class Clock extends Component {
         this.setState({
             hour: this.hour, minute: date.getMinutes(), second: date.getSeconds()
         })
-        console.log(this.state)
+        // console.log(this.state)
     }
     render() {
         return (
-            <div class="clock">
+            <div className={styles.demo02}>
+            <div className={styles.container}>
+            <div className={styles.clock}>
                 <svg width="100%" height="100%" version="1.1"
                     xmlns="http://www.w3.org/2000/svg">
                     {this.time}
                 </svg>
-                <div class="hours pointer" style={{ 'transform': `rotate(${this.state.hour / 12 * 360 - 90}deg)` }}>
+                <div className={styles.hours + " " + styles.pointer} style={{ 'transform': `rotate(${this.state.hour / 12 * 360 - 90}deg)` }}>
                     <svg width="100%" height="100%" version="1.1"
                         xmlns="http://www.w3.org/2000/svg">
                         <line x1="30" y1="4" x2="55" y2="4" />
                     </svg>
                 </div>
-                <div class="seconds" style={{ 'transform': `rotate(${this.state.second / 60 * 360 - 90}deg)` }}>
+                <div className={styles.seconds} style={{ 'transform': `rotate(${this.state.second / 60 * 360 - 90}deg)` }}>
                     <svg width="100%" height="100%" version="1.1"
                         xmlns="http://www.w3.org/2000/svg">
                         <polyline points="5,20 25,20 40,10 50,30 60,20 100,20" />
@@ -84,7 +86,7 @@ class Clock extends Component {
                             fill="#91D109" />
                     </svg>
                 </div>
-                <div class="minutes pointer" style={{ 'transform': `rotate(${this.state.minute / 60 * 360 - 90}deg)` }}>
+                <div className={styles.minutes + " " + styles.pointer} style={{ 'transform': `rotate(${this.state.minute / 60 * 360 - 90}deg)` }}>
                     <svg width="100%" height="100%" version="1.1"
                         xmlns="http://www.w3.org/2000/svg">
                         <line x1="8" y1="4" x2="50" y2="4" />
@@ -93,16 +95,18 @@ class Clock extends Component {
                     </svg>
                 </div>
             </div>
+            </div>
+            </div>
         )
     }
 }
 
 export default Clock
 
-window.addEventListener("load", () => {
-    let myComponent =
-        <div class="container">
-            <Clock />
-        </div>;
-    ReactDOM.render(myComponent, document.getElementById('root'));
-});
+// window.addEventListener("load", () => {
+//     let myComponent =
+//         <div className="container">
+//             <Clock />
+//         </div>;
+//     ReactDOM.render(myComponent, document.getElementById('root'));
+// });

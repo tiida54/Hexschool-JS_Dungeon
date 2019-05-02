@@ -5,14 +5,14 @@ import demo01 from './components/demo01/Multiplication';
 import demo02 from './components/demo02/Clock';
 
 const App = () => (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={demo01} />
-        <Route path="/demo01" component={demo01} />
-        <Route path="/demo02" component={demo02} />
+  <BrowserRouter>
+    <Switch>
+      {/* <Route path="/" exact component={demo01} /> */}
+      <Route path="/demo01" component={demo01} />
+      <Route path="/demo02" component={demo02} />
 
-      </Switch>
-    </BrowserRouter>
+    </Switch>
+  </BrowserRouter>
 );
 
 export default App;

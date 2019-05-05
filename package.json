@@ -2,7 +2,7 @@
   "name": "hexschool-js_dungeon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tiida54.github.io/hexschool-js_dungeon",
+  "homepage": "https://tiida54.github.io/hexschool_js_dungeon",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

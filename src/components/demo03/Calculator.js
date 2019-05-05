@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './Calculator.scss';
+import styles from './Calculator.module.scss';
 
 
 class CalculatorResult extends Component {
@@ -18,9 +18,9 @@ class CalculatorResult extends Component {
     }
     render() {
         return (
-            <div class="result">
-                <p class="result-calculate">{this.props.currentFormula}</p>
-                <p class="result-number" style={{ 'font-size': (this.props.result.toString().length < 10) ? "56px" : "30px" }}>{this.props.result}</p>
+            <div className={styles.result}>
+                <p className={styles.result_calculate}>{this.props.currentFormula}</p>
+                <p className={styles.result_number} style={{ 'font-size': (this.props.result.toString().length < 10) ? "56px" : "30px" }}>{this.props.result}</p>
             </div>
         )
     }
@@ -31,27 +31,27 @@ class CalculatorCount extends Component {
         let numbers = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "00", "."];
         let operators = ["÷", "×", "+", "-"];
         this.numberItem = numbers.map((item) =>
-            <div class="number block" onClick={this.props.enterNumber.bind(this, item)}>{item}</div>
+            <div className={styles.number + " " + styles.block} onClick={this.props.enterNumber.bind(this, item)}>{item}</div>
         );
         this.operatorItem = operators.map((item) =>
-            <div class="operator block" onClick={this.props.enterOperator.bind(this, item)}>{item}</div>
+            <div className={styles.number.operator + " " + styles.block} onClick={this.props.enterOperator.bind(this, item)}>{item}</div>
         )
-        this.props.enterNumber = this.props.enterNumber.bind(this)
-        this.props.enterOperator = this.props.enterOperator.bind(this)
+        // this.props.enterNumber = this.props.enterNumber.bind(this)
+        // this.props.enterOperator = this.props.enterOperator.bind(this)
     }
     render() {
         return (
-            <div class="count">
-                <div class="count-number" >
+            <div className={styles.count}>
+                <div className={styles.count_number} >
                     {this.numberItem}
                 </div>
-                <div class="count-operator">
+                <div className={styles.count_operator}>
                     {this.operatorItem}
                 </div>
-                <div class="count-bottom">
-                    <div class="count-bottom__back block" onClick={this.props.empty}>AC</div>
-                    <div class="count-bottom__back block" onClick={this.props.back}>⌫</div>
-                    <div class="count-bottom__equal" onClick={this.props.equal}>=</div>
+                <div className={styles.count_bottom}>
+                    <div className={styles.count_bottom_back + " " + styles.block} onClick={this.props.empty}>AC</div>
+                    <div className={styles.count_bottom_back + " " + styles.block} onClick={this.props.back}>⌫</div>
+                    <div className={styles.count_bottom_equal} onClick={this.props.equal}>=</div>
                 </div>
             </div>
         )
@@ -64,7 +64,7 @@ class Calculator extends Component {
     }
     enterNumber() {
         return (e) => {
-            let { currentFormula, pendingNumber, result, pendingResult } = this.state
+            let { currentFormula, pendingNumber } = this.state
             if (currentFormula === "") {
                 this.setState({
                     pendingNumber: "" + e,
@@ -123,7 +123,7 @@ class Calculator extends Component {
     }
     back() {
         return (e) => {
-            let { currentFormula, pendingNumber, result, pendingResult } = this.state
+            let { currentFormula, pendingNumber } = this.state
             if (currentFormula.charAt(currentFormula.length - 1) !== "") {
                 currentFormula = currentFormula.substring(0, currentFormula.length - 1);
                 pendingNumber = pendingNumber.substring(0, pendingNumber.length - 1);
@@ -148,7 +148,7 @@ class Calculator extends Component {
     }
     equal() {
         return (e) => {
-            let { currentFormula, pendingNumber, result } = this.state
+            let { pendingNumber } = this.state
             let calc = this.calc(pendingNumber.split(" "))
 
             this.setState({
@@ -181,9 +181,11 @@ class Calculator extends Component {
     }
     render() {
         return (
-            <div class="calculator">
-                <CalculatorResult currentFormula={this.state.currentFormula} result={this.state.result} />
-                <CalculatorCount enterNumber={this.enterNumber()} enterOperator={this.enterOperator()} empty={this.empty()} back={this.back()} equal={this.equal()} />
+            <div className={styles.demo03}>
+                <div className={styles.calculator}>
+                    <CalculatorResult currentFormula={this.state.currentFormula} result={this.state.result} />
+                    <CalculatorCount enterNumber={this.enterNumber()} enterOperator={this.enterOperator()} empty={this.empty()} back={this.back()} equal={this.equal()} />
+                </div>
             </div>
         )
     }

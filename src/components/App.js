@@ -6,7 +6,7 @@ import demo02 from './demo02/Clock';
 import demo03 from './demo03/Calculator';
 
 const App = () => (
-  <BrowserRouter basename = "/hexschool_js_dungeon">
+  <BrowserRouter basename = {process.env.hexschool_js_dungeon}>
     <Switch>
       <Route path="/" exact component={demo03} />
       <Route path="/demo01" component={demo01} />

@@ -36,7 +36,7 @@ for (let i = 2; i < 10; i++) {
 // console.log(listItems)
 const  MultiplicationList = () => (
     // console.log("MultiplicationList")
-     <div className={styles.container}>
+     <div className={styles.demo01}>
       <div className={styles.title_block}>
         <div className={styles.title_block_bar}>
           <div className={styles.title_block_bar_line}>

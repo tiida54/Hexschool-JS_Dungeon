@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/hexschool_js_dungeon/precache-manifest.0b96e75b0a0209c829e3d67b0c8d63d1.js"
+  "/hexschool_js_dungeon/precache-manifest.211d5543c61194e12fc69d9d5508aed6.js"
 );
 
 self.addEventListener('message', (event) => {

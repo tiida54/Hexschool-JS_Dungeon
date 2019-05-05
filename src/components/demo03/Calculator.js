@@ -193,7 +193,7 @@ class Calculator extends Component {
 
 export default Calculator
 
-ReactDOM.render(
-    <Calculator />
-    , document.getElementById('root')
-)
+window.addEventListener("load", () => {
+    let myComponent =<Calculator />
+    ReactDOM.render(myComponent, document.getElementById('root'));
+});

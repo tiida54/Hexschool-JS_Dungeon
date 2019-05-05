@@ -6,7 +6,7 @@ import demo02 from './demo02/Clock';
 import demo03 from './demo03/Calculator';
 
 const App = () => (
-  <BrowserRouter >
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route path="/" exact component={demo03} />
       <Route path="/demo01" component={demo01} />

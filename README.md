@@ -1,6 +1,6 @@
-# Hexschool-JS_Dungeon
+# Hexschool_JS_Dungeon
 
-[Udemy - js-underground](https://www.udemy.com/js-underground/)
+[Udemy - js_underground](https://www.udemy.com/js-underground/)
 
 - 使用 React & Vanilla JS
 
@@ -34,6 +34,6 @@
 ###### tags: `React` `Notes` `Hexschool` `underground`
 
 ---
-[demo01]:https://tiida54.github.io/hexschool-js_dungeon/demo01
-[demo02]:https://tiida54.github.io/hexschool-js_dungeon/demo02
-[demo03]:https://tiida54.github.io/hexschool-js_dungeon/demo03
+[demo01]:https://tiida54.github.io/hexschool_js_dungeon/demo01
+[demo02]:https://tiida54.github.io/hexschool_js_dungeon/demo02
+[demo03]:https://tiida54.github.io/hexschool_js_dungeon/demo03

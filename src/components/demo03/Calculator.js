@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import styles from './Calculator.module.scss';
 
 
@@ -193,7 +193,7 @@ class Calculator extends Component {
 
 export default Calculator
 
-window.addEventListener("load", () => {
-    let myComponent =<Calculator />
-    ReactDOM.render(myComponent, document.getElementById('root'));
-});
+// window.addEventListener("load", () => {
+//     let myComponent =<Calculator />
+//     ReactDOM.render(myComponent, document.getElementById('root'));
+// });

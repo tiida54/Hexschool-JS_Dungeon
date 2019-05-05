@@ -10,9 +10,8 @@ const App = () => (
     <Switch>
       <Route path="/" exact component={demo03} />
       <Route path="/demo01" component={demo01} />
-      <Route path="demo02" component={demo02} />
-      <Route path={process.env.Phexschool_js_dungeon + '/demo03'} component={demo03} />
-      {/* <Route component={demo03} /> */}
+      {/* <Route path="demo02" component={demo02} />
+      <Route path={process.env.hexschool_js_dungeon + '/demo03'} component={demo03} /> */}
     </Switch>
   </BrowserRouter>
 );

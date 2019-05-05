@@ -12,7 +12,7 @@
 | -------- | ---------------- |-------- |
 | 1F - 九九乘法表     | JS for 迴圈技巧      | [DEMO][demo01]     |
 | 2F - 時鐘    | setTimeout()       |  [DEMO][demo02]     |
-| 3F - 計算機     | 數字位數    | DEMO     |
+| 3F - 計算機     | 數字位數    | [DEMO][demo03]       |
 | 4F - 時區     | TimeStamp    | DEMO     |
 | 5F - 全台空氣指標儀表板    | API    | DEMO     |
 | 6F - 60秒算數遊戲     | 狀態    | DEMO     |
@@ -36,3 +36,4 @@
 ---
 [demo01]:https://tiida54.github.io/hexschool-js_dungeon/demo01
 [demo02]:https://tiida54.github.io/hexschool-js_dungeon/demo02
+[demo03]:https://tiida54.github.io/hexschool-js_dungeon/demo03

@@ -34,6 +34,6 @@
 ###### tags: `React` `Notes` `Hexschool` `underground`
 
 ---
-[demo01]:https://tiida54.github.io/hexschool_js_dungeon/demo01
-[demo02]:https://tiida54.github.io/hexschool_js_dungeon/demo02
-[demo03]:https://tiida54.github.io/hexschool_js_dungeon/demo03
+[demo01]:https://tiida54.github.io/hexschool_js_dungeon/#/demo01
+[demo02]:https://tiida54.github.io/hexschool_js_dungeon/#/demo02
+[demo03]:https://tiida54.github.io/hexschool_js_dungeon/#/demo03

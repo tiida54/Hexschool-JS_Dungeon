@@ -11,14 +11,16 @@ class App extends React.Component {
       <HashRouter basename="/">
         <div>
           <ul>
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/">demo01</Link></li>
+            <li><Link to="/demo01">demo01</Link></li>
             <li><Link to="/demo02">demo02</Link></li>
             <li><Link to="/demo03">demo03</Link></li>
           </ul>
 
           <hr />
-  
+
           <Route exact path="/" component={demo01} />
+          <Route path="/demo01" component={demo01} />
           <Route path="/demo02" component={demo02} />
           <Route path="/demo03" component={demo03} />
 

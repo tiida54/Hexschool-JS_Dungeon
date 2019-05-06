@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hexschool_js_dungeon/static/css/main.59cd74c9.chunk.css",
-    "main.js": "/hexschool_js_dungeon/static/js/main.6a91bdcc.chunk.js",
-    "main.js.map": "/hexschool_js_dungeon/static/js/main.6a91bdcc.chunk.js.map",
+    "main.js": "/hexschool_js_dungeon/static/js/main.19e2b810.chunk.js",
+    "main.js.map": "/hexschool_js_dungeon/static/js/main.19e2b810.chunk.js.map",
     "runtime~main.js": "/hexschool_js_dungeon/static/js/runtime~main.b3594ef3.js",
     "runtime~main.js.map": "/hexschool_js_dungeon/static/js/runtime~main.b3594ef3.js.map",
     "static/js/2.25846827.chunk.js": "/hexschool_js_dungeon/static/js/2.25846827.chunk.js",
     "static/js/2.25846827.chunk.js.map": "/hexschool_js_dungeon/static/js/2.25846827.chunk.js.map",
     "index.html": "/hexschool_js_dungeon/index.html",
-    "precache-manifest.d1a727602f66826fb77982390f3345e7.js": "/hexschool_js_dungeon/precache-manifest.d1a727602f66826fb77982390f3345e7.js",
+    "precache-manifest.b865cdde6d97f1b8ccff8526bf7baf9d.js": "/hexschool_js_dungeon/precache-manifest.b865cdde6d97f1b8ccff8526bf7baf9d.js",
     "service-worker.js": "/hexschool_js_dungeon/service-worker.js",
     "static/css/main.59cd74c9.chunk.css.map": "/hexschool_js_dungeon/static/css/main.59cd74c9.chunk.css.map"
   }
